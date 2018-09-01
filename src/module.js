@@ -25,6 +25,6 @@ class Ctrl extends PanelCtrl {
   
 }
 
-Ctrl.templateUrl = 'partials/pruebaIsert.html';
+Ctrl.templateUrl = 'partials/pruebaInsert.html';
 
 export { Ctrl as PanelCtrl }
