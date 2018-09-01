@@ -36,6 +36,6 @@ class Ctrl extends PanelCtrl {
   
 }
 
-Ctrl.templateUrl = 'partials/template.php';
+Ctrl.templateUrl = 'partials/template.html';
 
 export { Ctrl as PanelCtrl }
