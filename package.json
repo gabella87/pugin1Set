@@ -1,5 +1,5 @@
 {
-  "name": "grafana-plugin-template-webpack",
+  "name": "guille-test-plugin",
   "version": "1.0.0",
   "description": "Some description",
   "main": "dist/module.js",
@@ -8,9 +8,9 @@
     "dev": "webpack --config build/webpack.dev.conf.js"
   },
   "keywords": [],
-  "author": "Alexey Velikiy",
+  "author": "Guillermo Abella",
   "license": "MIT",
-  "repository": "https://github.com/CorpGlory/grafana-plugin-template-webpack",
+  "repository": "https://github.com/gabella87/pugin1Set.git",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
