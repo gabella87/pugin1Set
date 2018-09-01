@@ -1,32 +1,30 @@
-<div class="hello">
-  
-  Hello from <b> GUILLE PLUGIN</b>
-
-  <form>
-    Fecha:<br>
-    <input type="date" name="fecha"><br>
-    Usage idle:<br>
-    <input type="text" name="usage">
-  </form>
-
-  <?php
-$servername = "sitedev.ipxon.net";
-$username = "tesis";
-$password = "tesis.2018";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+<?php
+//Step1
+ $db = mysqli_connect('sitedev.ipxon.net','tesis','tesis.2018','tesis')
+ or die('Error connecting to MySQL server.');
 ?>
 
+<html>
+ <head>
+ </head>
+ <body>
+ <h1>Hello from <b> GUILLE PLUGIN</b></h1>
 
+<?php
+//Step2
+$query = "SELECT * FROM Guille";
+mysqli_query($db, $query) or die('Error querying database.');
 
+//Step3
+$result = mysqli_query($db, $query);
+$row = mysqli_fetch_array($result);
 
+while ($row = mysqli_fetch_array($result)) {
+ echo $row['date'] . ' ' . $row['usage_idle'] . '<br />';
+}
+//Step 4
+mysqli_close($db);
+?>
 
-
-</div>
+</body>
+</html>
