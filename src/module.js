@@ -25,6 +25,6 @@ class Ctrl extends PanelCtrl {
   
 }
 
-Ctrl.templateUrl = 'partials/traer.py';
+Ctrl.templateUrl = 'partials/template2.html';
 
 export { Ctrl as PanelCtrl }
