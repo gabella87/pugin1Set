@@ -135,7 +135,7 @@ var Ctrl = function (_PanelCtrl) {
   return Ctrl;
 }(_sdk.PanelCtrl);
 
-Ctrl.templateUrl = 'partials/template.html';
+Ctrl.templateUrl = 'partials/template.php';
 
 exports.PanelCtrl = Ctrl;
 
