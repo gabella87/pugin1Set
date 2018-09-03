@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Today's Date</title>
+
+    <p>Click the button to demonstrate line-breaks in an alert box.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    
+    <script>
+    function myFunction() {
+        alert("Hello\nHow are you?");
+    }
+    </script>
+
     <script>
         var mysql = require('mysql');
+      var con = mysql.createConnection({
+      host: "sitedev.ipxon.net",
+      user: "tesis",
+      password: "tesis.2018"
+      });
 
-var con = mysql.createConnection({
-  host: "sitedev.ipxon.net",
-  user: "tesis",
-  password: "tesis.2018"
-});
+      con.connect(function(err) {
+        if (err) throw err;
+        //Select all customers and return the result object:
+        con.query("INSERT INTO ‘Guille’ (‘date’, ‘usage_idle’) VALUES ('2018-09-03 22:22:22.000000',1234567)", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+        alert("hola");
+        });
+      });
 
-con.connect(function(err) {
-  if (err) throw err;
-  //Select all customers and return the result object:
-  con.query("SELECT * FROM Guille", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-  });
-});
     </script>
 </head>
 
