@@ -16,7 +16,11 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
   if (err) throw err;
-  console.log("Connected!");
+  //Select all customers and return the result object:
+  con.query("SELECT * FROM Guille", function (err, result, fields) {
+    if (err) throw err;
+    console.log(result);
+  });
 });
     </script>
 </head>
