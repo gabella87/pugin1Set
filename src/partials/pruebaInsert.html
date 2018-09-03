@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Today's Date</title>
     <script>
-        let d = new Date();
-        alert("Today's date is " + d);
+        var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "sitedev.ipxon.net",
+  user: "tesis",
+  password: "tesis.2018"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
     </script>
 </head>
 
