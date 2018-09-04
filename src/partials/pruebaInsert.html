@@ -27,7 +27,7 @@
       con.connect(function(err) {
         if (err) throw err;
         //Select all customers and return the result object:
-        con.query("INSERT INTO Guille (date, usage_idle) VALUES ('2018-09-03 22:22:22.000000',1234567)", function (err, result, fields) {
+        con.query("INSERT INTO Guille (date, usage_idle) VALUES ('2018-09-03 22:22:22.000000',1234567)", function (err, result) {
         if (err) throw err;
         console.log(result);
         alert("hola");
