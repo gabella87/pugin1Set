@@ -12,12 +12,7 @@
     
     <script>
     function myFunction() {
-        alert("Hello\nHow are you?");
-    }
-    </script>
-
-    <script>
-        var mysql = require('mysql');
+      var mysql = require('mysql');
       var con = mysql.createConnection({
       host: "sitedev.ipxon.net",
       user: "tesis",
@@ -27,20 +22,21 @@
       con.connect(function(err) {
         if (err) throw err;
         //Select all customers and return the result object:
-        con.query("INSERT INTO Guille (date, usage_idle) VALUES ('2018-09-03 22:22:22.000000',1234567)", function (err, result) {
+        con.query("SELECT * FROM Guille", function (err, result, fields) {
         if (err) throw err;
         console.log(result);
-        alert("hola");
         });
       });
 
+
+
+        alert("Hello\nHow are you?");
+    }
     </script>
+
 </head>
 
 <body>
 
 </body>
-
-
-
 </html>
