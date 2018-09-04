@@ -25,6 +25,6 @@ class Ctrl extends PanelCtrl {
   
 }
 
-Ctrl.templateUrl = 'partials/insert.js';
+Ctrl.templateUrl = 'partials/pehachepe.php';
 
 export { Ctrl as PanelCtrl }
