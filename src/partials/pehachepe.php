@@ -9,7 +9,7 @@
                 $result = mysqli_query($db, $query);
                 while($row = mysqli_fetch_assoc($result)) {
                       // Display your datas on the page
-                      echo $row
+                      echo $row;
                 }
           ?>
     </body>
