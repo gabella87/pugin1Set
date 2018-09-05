@@ -3,9 +3,9 @@
 ?>
 <html>
     <body>
-      <p>Probando...</p>
+      <p>Probando ... ...</p>
           <?php
-                $query = "SELECT * FROM 'Guille';";
+                $query = "SELECT * FROM Guille;";
                 $result = mysqli_query($db, $query);
                 while($row = mysqli_fetch_assoc($result)) {
                       // Display your datas on the page
