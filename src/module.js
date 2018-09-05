@@ -25,6 +25,6 @@ class Ctrl extends PanelCtrl {
   
 }
 
-Ctrl.templateUrl = 'partials/pehachepe.php';
+Ctrl.templateUrl = 'partials/index.html';
 
 export { Ctrl as PanelCtrl }
